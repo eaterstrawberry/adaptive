@@ -573,8 +573,10 @@ body {
 
 /* ---ABOUT-----------------------------------*/
 .about {
+    background: #ffffff;
     padding: 80px 0px 130px 0px;
 }
+
 .about__container {
 }
 
@@ -584,7 +586,9 @@ body {
 
 .about__body {
     display: flex;
+    align-items: flex-start;
 }
+
 .about__video {
     flex: 0 0 57%;
     position: relative;
@@ -601,7 +605,7 @@ body {
 
 .about__content {
     flex: 1 1 auto;
-    padding: 0px 0px 0px 121px;
+    padding: 20px 0px 0px 121px;
 }
 
 .about__title {
@@ -610,21 +614,97 @@ body {
     line-height: 142%;
     letter-spacing: 0.2px;
 }
+
+.about__title:not(:last-child) {
+    margin: 0px 0px 10px 0px;
+}
+
 .about__text {
     color: #737373;
     line-height: 142%;
 }
+
 .about__items {
+    
 }
+
+.about__top:not(:last-child) {
+    margin: 0px 0px 50px 0px;
+}
+
 .about__item {
 }
+
+.about__item:not(:last-child) {
+    margin: 0px 0px 30px 0px;
+}
+
 .item-about {
+    display: flex;
 }
 .item-about__icon {
+    flex: 0 0 32px;
 }
 .item-about__body {
+    flex: 1 1 auto;
+    padding: 0px 0px 0px 20px;
 }
 .item-about__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
 }
+
+.item-about__title:not(:last-child) {
+    margin: 0px 0px 5px 0px;
+}
+
 .item-about__text {
+    color: #737373;
+    white-space: nowrap;
+    line-height: 142%;
+    width: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+@media (max-width: 1080px) {
+    .about__content {
+        padding: 0px 0px 0px 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    .about {
+        padding: 50px 0px 50px 0px;
+    }
+    .about__body {
+        flex-direction: column-reverse;
+        align-items: stretch;
+    }
+    .about__title {
+        font-size: 24px;
+    }
+    .about__content {
+        padding: 0px 0px 0px 0px;
+    }
+    .about__video {
+        padding: 0px 0px 56.25% 0px;
+    }
+    .about__video:not(:last-child) {
+        margin: 50px 0px 0px 0px;
+    }
+    .about__header {
+        margin: 0px 0px 30px 0px;
+    }
+}
+@media (max-width: 767px) {
+    .about {
+        padding: 20px 0px 50px 0px;
+    }
+    .about__top:not(:last-child) {
+        margin: 0px 0px 30px 0px;
+    }
+    .about__video:not(:last-child) {
+        margin: 30px 0px 0px 0px;
+    }
 }
