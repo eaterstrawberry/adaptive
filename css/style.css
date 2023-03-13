@@ -179,6 +179,9 @@ body {
 
 .page__subscribe {
 }
+.page__support {
+}
+
 
 /* ---HEADER-BLOCK-----------------------------------*/
 .header-block {
@@ -846,4 +849,38 @@ body {
     .subscribe__button {
         padding: 0px 15px;
     }
+}
+
+/* ---SUPPORT-----------------------------------*/
+.support {
+}
+
+.support__container {
+}
+
+.support__header {
+}
+
+.support__items {
+}
+
+.support__item {
+}
+
+.item-support {
+}
+
+.item-support__icon {
+}
+
+.item-support__emails {
+}
+
+.item-support__email {
+}
+
+.item-support__label {
+}
+
+.item-support__buttom {
 }
