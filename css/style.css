@@ -853,34 +853,116 @@ body {
 
 /* ---SUPPORT-----------------------------------*/
 .support {
+    padding: 80px 0px 135px 0px;
 }
 
 .support__container {
 }
 
 .support__header {
+    margin: 0px 0px 80px 0px;
 }
 
 .support__items {
+    margin: 0px -15px;
 }
 
+
+
 .support__item {
+    flex: 0 1 33.333%;
 }
 
 .item-support {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 50px 15px;
+}
+
+.item-support_active {
+    background-color: #252b42;
+    padding: 80px 15px;
+    color:#fff;
+}
+
+.item-support_active .item-support__buttom {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.item-support > :not(:last-child) {
+    margin: 0px 0px 15px 0px;
 }
 
 .item-support__icon {
 }
 
 .item-support__emails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .item-support__email {
+    color: inherit;
+    font-weight: 600;
+    line-height: 150%;
+    font-size: 16px;
+}
+.item-support__email:hover {
+    text-decoration: underline;
 }
 
 .item-support__label {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .item-support__buttom {
+    border: 1px solid #ff7b47;
+    min-height: 44px;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    color: #ff7b47;
+    line-height: 142%;
+    text-align: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease 0s;
+}
+.item-support__buttom:hover {
+    border: 1px solid #ff7b47;
+    background-color: #ff7b47;
+    color: #fff;
+}
+
+@media (min-width: 992px) {
+    .support__items {
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+}
+@media (max-width: 992px) {
+    .support {
+        padding: 50px 0px;
+    }
+    .support__header {
+        margin: 0px 0px 50px 0px;
+    }
+    .item-support_active {
+        padding: 50px 15px;
+    }
+}
+@media (max-width: 767px) {
+    .support__header {
+        margin: 0px 0px 30px 0px;
+    }
 }
